@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 34.76%;
+  margin-top: 3%;
+  max-height: 6%;
+  height: 40vw;
+  }
+  
+  .box {
+    width: 20vw;
+    height:40vw;
+    background-color: #eee;
+    border: .1vw solid #999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    
+  }
+  
+  .box img {
+    width: 120%;
+    margin-bottom:2vw;
+    object-fit: contain;
+    margin-top: -6vw;
+  }
+  
+  .box p {
+    font-size: 1.7vw;
+    text-align: center;
+    padding: 0 1vw;
+    padding-bottom: -3vw;
+    margin-bottom: -1vw;
+ 
+    
+  }
+  .selectyourcity {
+    margin: 0 auto;
+    text-align: center;
+    padding-top:2vw;
+    max-width:19vw;
+    
+}
+
+h1 {
+    font-size:2vw;
+    margin-bottom:1vh;
+}
+
+select {
+    padding:1vw;
+    font-size:1.4vw;
+    border-radius:.4vw;
+    border: 1px solid #ccc;
+}
+#coaching_name{
+    font-size: 1.4vw;
+    color: red;
+    font-weight:900;
+}
+
+#rate-star{
+    color: #ffdf00;
+    margin: 0.6vw;
+    margin-bottom: -2vw;
+}
+
+@media (max-width:720px){
+  .container{
+    flex-basis:100%;
+  }
+}

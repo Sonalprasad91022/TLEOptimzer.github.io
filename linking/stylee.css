@@ -1,0 +1,704 @@
+*{
+    margin-top: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #main{
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+  }
+  
+    .container {
+      height: 2.1vw;
+      font-size: 1.9vw;
+      background-color: transparent;
+      color: white;
+      width: 50%;
+      margin-top: -5vw;
+      margin-left: 15vw;
+      display: block;
+      overflow: hidden;
+      text-shadow:.3vw .1vw .1vw black;
+      font-weight:500;
+      display: block;
+    }
+    #map{
+      font-size: 1.4vw;
+      display: inline-block;
+      margin-left: 60vw;
+      margin-top: -3vw;
+      margin-bottom: 3vw;
+    }
+    .line {
+      animation: changeLine 7s infinite;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    @keyframes changeLine {
+      0% {
+        transform: translateY(0);
+      }
+      33.33% {
+        transform: translateY(-180%);
+      }
+      66.66% {
+        transform: translateY(-471%);
+      }
+      100% {
+        transform: translateY(-13%);
+       
+      }
+    }
+   
+  .container1{
+      width:100%;
+      height:100%;
+      position: absolute;
+      overflow: hidden; 
+      border: .3vw solid white; 
+      transition: 0.5s;
+  }
+  .wrapper{
+      width:100vw;
+      display: flex;
+      animation: slide 20s steps(1) infinite;
+      transform-origin: 50% 50% 0px;
+      z-index: 5;
+  }
+  .image1{
+     opacity:.7; 
+    width:100vw;
+    /* padding-left:1.3vw; */
+    
+  }
+  .image2{
+     opacity:.7; 
+    width:98vw;
+    
+  }
+  
+  
+  @keyframes slide{
+    0% {
+      transform: translateX(0);
+      
+    }
+    25% {
+      transform: translateX(0);
+      
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    55% {
+      transform: translateX(-198%);
+    }
+    75% {
+      transform: translateX(-198%);
+    }
+    80% {
+      transform: translateX(-296%);
+    }
+    100% {
+      transform: translateX(-100%);}
+  }
+  .fa-solid{
+    color: white;
+    margin-left: 2vw;
+    margin-top: .3vw;
+  }
+  .top{
+      height: 8vw;
+       background-image: linear-gradient(180deg, black,white); 
+    }
+  .top img{
+      width: 8vw;
+      height: 8vw;
+      margin-left: 4.5vw;
+      position: relative;
+  }
+  #pass{
+    color: white;
+    position: relative;
+    margin-top: -3vw;
+    margin-bottom: 2vw;
+    font-weight: 100;
+    font-size: 1vw;
+    margin-left: 20vw;
+      
+  }
+  #pass2{
+    margin-left: 21.5vw;
+    color: white;
+    font-weight: 1000;
+    position: relative;
+    font-size: 1vw;
+  }
+  #pass1{
+      color: red;
+      position:absolute;
+      font-size: 4vw;
+      margin-top: -2.7vw;
+      margin-left: 0.4vw;
+  }
+  
+  nav {
+      background-color: transparent; 
+      overflow: hidden; 
+      position: relative;
+    }
+    
+    nav ul {
+      list-style-type: none; 
+      margin: auto;
+    }
+    
+    nav li {
+      display: inline-block; 
+    }
+    
+    nav li a {
+      display: block; 
+      color:black;
+      text-align: center; 
+      font-size: 1.4vw;
+      padding: .9vw 2.5vw; 
+      text-decoration: none; 
+      font-weight:900;
+      font-family: 'Gloock', serif;
+      font-family: 'Roboto Slab', serif;
+      
+     
+    }
+    
+    nav li a:hover {
+      background-color:green; 
+      border-radius: .5vw;
+      color: white;
+      
+    }
+     /* autotyping section  */
+    .autotyping{
+      margin-left: 18vw;
+      justify-content: center;
+      margin-top:10%;
+      text-align: center;
+    
+    }
+  
+    .wrapper1 .dynamic-txts{
+      margin-left:1vw;
+      height:90px;
+      line-height:20px;
+      overflow: hidden;
+      margin-left: -12vw;
+      width:92vw;
+    }
+    .dynamic-txts li{
+      margin-left: -2vw;
+      list-style: none;
+      color:white;
+      position: relative;
+      top: 0;
+      margin-left: -17vw;
+      animation: slide1 16s steps(4) infinite;
+    }
+    @keyframes slide1 {
+      100%{
+        top: -360px;
+         /* color:green;  */
+         
+      }
+    }
+    .dynamic-txts li span{
+      line-height: 90px;
+      font-family: 'Gloock', serif;
+      font-family: 'Roboto Slab', serif;
+      text-shadow: 0.4vw 0.1vw 0.1vw white;
+      font-weight: 900;
+      font-size: 5vw;
+      margin-left: 8vw;
+      color: black;
+  
+    }
+  
+    /*.................................. director section starts here ....................................  */
+   .director{
+    background-color: lightcyan;
+    display: flex;
+   }
+   
+  .directorimage{
+    width: 25vw;
+    height: 25vw;
+    margin: 2vw;
+  }
+  .aboutdirector{
+    width: 50vw;
+    height: 10vw;
+    margin-left:11vw;
+    margin-top: 7vw;
+    font-size: 2vw;
+  }
+  .directorimage img{
+  width: 25vw;
+  height: 25vw;
+  border-radius: 1.2vw;
+  }
+  /* .............................director section ends here .......................... */
+  
+  
+  .row {
+    padding: 9vw;
+    background-color: #00800030;
+    display: flex;
+    margin-top: 3vw;
+    margin-top: .9rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 41vw;
+    width: 103vw;
+    padding-top: 5vw;}
+  
+  
+  .col-4 {
+    padding: 0;
+    height: 11rem;
+    margin-top: 25px;
+    overflow: hidden;
+    position: relative;
+    flex-basis: 30%;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-sizing: border-box;
+    bottom: 20px;
+  }
+  .feature {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: centre;
+  }
+  .eventsname{
+    color: red;
+    font-size:1.5vw;
+  }
+  
+  /*...................................responsiveness.................................*/
+  @media (max-width:720px) {
+  
+    .container1{
+      height: 29vh;
+    }
+    .row {
+      padding-bottom: 4vw;
+      height: 63vw;
+      margin: auto;
+    }
+    .col-4 {
+      flex-basis: 32%;
+      margin-bottom: -4%;
+      height: 22vw;
+    }
+   .para{
+    font-size: 1.1vw;
+   }
+  
+  #main{
+    height:32vh;
+  }
+  .col-2 img{
+    margin-left:4rem;
+  }
+  .features-desc{
+    flex-basis: 101%;
+    margin-bottom: -30px;
+    margin-top: 8vw;
+  }
+  .social-media {
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 3rem;
+  }
+  }
+  @media (max-width:720px) {
+    .reviews{
+        flex-direction:column;
+     }
+     .footer-col-2{
+         flex-basis: 100%;
+     }
+     .footer-box{
+        height: 95vh;
+        width: 96%;
+    }
+    .features{
+        flex-direction: column;
+        
+    }
+    .feature-image img{
+        margin-left: -8rem;
+        flex-basis: 100%;
+        width: 180%;
+        border-radius: 10px;
+    }
+    .copyright{
+      margin-top: 30vh;
+      flex-direction:right;
+      font-size: .5rem;
+    }
+  
+  }
+  
+  
+  
+  /*.................................responsiveness ends here.........................*/
+  
+  .images{
+   /* position: absolute; */
+   width: 100%;
+   height: 100%;
+   left: 0px;
+   top: 0px;
+   
+  }
+  
+  
+  .para{
+    color:white;
+    position: absolute;
+    margin-top:-10%;
+    opacity: 0;
+    transition: 1s;
+  }
+  .para p{
+    font-size: 14px;
+    background-origin: 8px;
+    font-size: 1.7vw;
+  }
+  hr{
+    background-color: white;
+    height: 2px;
+    margin: 2px auto;
+    width: 45%;
+  
+  }
+  .col-4:hover .para {
+    margin-top: 6%;
+    opacity: 1;
+  }
+  
+  .background{
+    width:47vw;
+    height:47vw;
+    position:absolute;
+    /* top: 10px; */
+    margin: 0px;
+    background:linear-gradient(#1398c1e0,rgba(172, 103, 29, 0.9));
+    opacity: 0;
+    transition: 1s;
+  }
+  .col-4:hover .background{
+    opacity:1;
+    cursor: pointer;
+  
+  }
+  
+  
+  /* .........................................counter animation section starts ............................. */
+  .counter {
+    text-align: center;
+    margin-top:2vw;
+    width: 21vw;
+  
+  }
+  
+  h1 #count {
+    font-size:5vw;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  #count1,#count2,#count3,#count4{
+   font-size: 6vw;
+   padding-top: 2vw;
+   color: white;
+  }
+  .counter p {
+    font-size: 2.1vw;
+  color:black;
+  margin: 2vw;
+  width: 22vw;
+  font-weight:900;
+  position: absolute;
+  margin-top: 13vw;
+  }
+  .counterheading{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+  }
+  .circle{
+    width:11vw;
+    height:11vw;
+    background-color: black;
+    display: block;
+    margin-left:7vw;
+    position: absolute;
+    border-top-left-radius:8vw;
+  }
+  .counterheading {
+    position: relative;
+    height: 24vw;
+    margin-top: 2vw;
+    right: 0vw;
+    width: 98.5vw;
+  }
+  
+  .counterheading::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity:.7;
+    background-image: url('students-3518726__480.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
+  /* ..................................................counter animation section ends here.............. */
+  /* ...................................................placement section starts here ................................... */
+  
+  .container3 {
+    /* background-color: rgba(196, 22, 184, 0.151); */
+    width: 89vw;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+    height: 29vw;
+    margin-top: 2vw;
+  }
+  .subcontainer {
+    display: flex;
+    width: 400%;
+    animation: slide4 10s infinite;
+    transition: 2s;
+    flex-wrap: wrap;
+  }
+  
+      @keyframes slide4{
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-25%);
+        }
+        50% {
+          transform: translateX(-25%);
+        }
+        55% {
+          transform: translateX(-50%);
+        }
+        75% {
+          transform: translateX(-50%);
+        }
+        80% {
+          transform: translateX(-75%);
+        }
+        100% {
+          transform: translateX(-75%);
+        }
+      }
+     
+    .subcontainer:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+      .under {
+        width: 85vw;
+        height: 25vw;
+        background-color:lightgray;
+        /* border-radius: 2vw; */
+        margin: 2vw;
+        display: flex;
+      }
+      .under div {
+        font-size: 2vw;
+        justify-content: center;
+        margin: 1vw;
+        
+      }
+   
+      .image {
+        width: 18vw;
+        height: 23vw;
+        background-color: rgba(0, 128, 0, 0.345);
+        margin: 2vw;
+      }
+      .description {
+        width: 65vw;
+        height: 17vw;
+        margin-left: 9vw;
+        padding-left: 2vw;
+        padding: 5vw;
+      }
+    /* .........................................................placement section ends here............................................... */
+    /* ..........................................................our recruiter section ..................................................*/
+  
+    .container5 {
+      width: 92vw;
+      margin: 3vw;
+      overflow: hidden;
+      height: 16vw;
+    }
+    .subcontainer2 {
+  
+      display: flex;
+      width: 95vw;
+      animation: slide5 20s infinite;
+      transition:10s;
+    }
+    @keyframes slide5 {
+      0%{
+        transform: translateX(-0%);
+      }
+    
+      100%{
+        transform: translateX(-100%);
+      }
+      
+    }
+      .subcontainer2 img{
+        width:10vw;
+        height:10vw;
+        margin: 4vw;
+        border-radius: 50%;
+      }
+      /* .....................................................gallary section starts from here........................................... */
+      .gallary{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 40%;
+        margin: 1vw;
+        margin-top: -7vw;
+        padding: 7vw;
+      }
+      .gallary img{
+        width: 16vw;
+        height: 15vw;
+        border-radius: 1vw;
+        padding: 0.5vw;
+  
+      }
+      .gallary img:hover{
+        transform: scale(1);
+        cursor: pointer;
+      }
+      /* .....................footer section starts from here ....................... */
+      /* .......................................Footer-Box.................................... */
+  
+  .footer-box{
+    width: 100%;
+    border-bottom-left-radius:16rem;
+    background: linear-gradient( white,black);
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  
+   
+  }
+  .footerback{
+    background-color: rgb(11, 12, 11);
+   
+  }
+  
+  .footer{ padding-bottom:2rem;
+  display: flex;
+    width: 90%;
+    height: 23rem;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .footer-col-1{
+    flex-basis:45% ;
+    padding-top: 3rem;
+    color: white;
+    font-size: 2vw;
+  }
+  .footer-col-1 h2{
+   padding-bottom:2rem;
+  }
+  
+  .footer-col-2{
+  
+    flex-basis:46% ;
+    height: 7rem;
+    color: white;
+  }
+  .footer-col-3{
+    padding-top: 1rem;
+    flex-basis: 25%;
+    color: white;
+  }
+  .footer-col-3 img{
+    width:8vw;
+    height: 3vw;
+  
+  }
+  .copyright{
+    margin-right: 3rem;
+    text-align: right;
+    font-size:1rem;
+    color: white;
+  }
+  .social-media{
+   margin-top: 20px;
+   
+  }
+  .social-media i{
+   padding: .2rem .2rem;
+    font-size: 2rem;
+    
+  }
+  .social-media i:hover{
+    color: white;
+  }
+  .image img{
+    width: 117%;
+    height: 97%;
+    margin-left: 1vw;
+    margin-top: 1vw;
+  }
+  #midheading{
+    display: block;
+    margin-left: 40%;
+    font-size: 3vw;
+    margin-top: 1.1vw;
+   }
+  /* ................heading section starts from here ....................... */
+  
+/* ......................heading section ends here................. */

@@ -1,0 +1,238 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.container {
+  margin-top:-4vw;
+  padding: 10px 7%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -56px;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 200px;
+  height: 130px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #4C4BF7;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 5px;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  transform: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 70px;
+}
+#autotyping{
+    border-right: solid 3px rgba(64, 199, 64, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4.4vw;
+    margin-top: 8vw;
+    margin-left: 2vw;
+    color: rgba(196, 30, 30, 0.7);
+  }
+ 
+
+  #autotyping {
+    animation: sonal 6s steps(60)  forwards,
+               sonu 600ms steps(29) infinite;
+               
+  }
+  p{
+    text-shadow: 2px solid red;
+  }
+  
+  
+  @keyframes sonal{
+    from{width: 0;}
+    to{width: 900px;}
+  }
+  
+  @keyframes sonu{
+    from{border-right-color: rgba(225, 109, 33, 0.75);}
+    to{border-right-color: transparent;}
+  }
+  .subpart{
+    box-sizing: border-box;
+    width: 86%;
+    justify-content: space-between;
+    height: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 6vw;
+    PADDING-LEFT: 19VW;
+    flex-basis: 33%;
+
+  }
+  .one{
+    width: 6vw;
+    height: 5vw;
+  }
+  .maincontailer{
+    justify-content: center;
+    margin: auto;
+    padding-left: 5vw;
+    border: 2vw solid red;
+  }
+  #para{
+    width: 15vw;
+    font-size: 2vw;
+  }
+  #a{
+    font-weight:900;
+    font-size:2.5vw ;
+  }
+  #b{
+    font-size:2.6vw;
+    margin-left: 2vw;
+  }
+  .right11{
+    width:2vw;
+    height:2vw;
+    margin-left: 10vw;
+  }
+  .right11 img{
+    height: 13vw;
+    width: 13vw;
+    margin-left: 67vw;
+    margin-top: -15vw;
+}
+  .midcontent{
+    margin-top: 4vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: beige;
+
+  }
+  .right img{
+    margin-top: -33vw;
+    display: absolute;
+    margin-left:32vw;
+    position: absolute;
+    height: 43vw;
+  }
+  .two h1{
+   padding-left: 9vw;
+    font-size: 3vw;
+    background-color: lightblue;
+  }
+  .two ul{
+    font-weight: 100;
+    font-size: 1.4vw;
+    
+    margin: 1vw;
+  }
+  #midheading{
+   display: block;
+    margin-left: 40%;
+    margin-top: 8vw;
+    font-size: 3vw;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 104vw;
+    margin-left: -3vw;
+    margin-top: .2vw;
+  }
+  
+  .box {
+    width: 22vw;
+    height: 35vw;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 24vw;
+    color: lightblue;
+    background-color: rgba(128, 128, 128, 0.297);
+  }
+  
+  .box img {
+    width:100%;
+  margin-top: -5vw;
+  
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    text-align: center;
+    font-size: 14px;
+    text-align: initial;
+    padding: 0 10px;
+    color: black;
+    font-size: 1.2vw;
+  }
+  #midheadingg{
+    display: block;
+    margin-left: 40%;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  #midheadinggg{
+    margin-left: 40%;
+    margin-top: 21vw;
+    font-size: 3vw;
+    position: absolute;
+    margin-bottom: 3vw;
+  }
+  @media (max-width:720px){
+    .container{
+      margin-top:-27vw;
+    }
+  }
+  
